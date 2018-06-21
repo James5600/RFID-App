@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" rdbms="MSSQL" format-version="4.4">
+    <root id="1">
+      <ServerType>standalone</ServerType>
+    </root>
+    <database id="2" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+      <Current>1</Current>
+    </database>
+    <database id="3" parent="1" name="tempdb">
+      <ObjectId>2</ObjectId>
+    </database>
+    <database id="4" parent="1" name="model">
+      <ObjectId>3</ObjectId>
+    </database>
+    <database id="5" parent="1" name="msdb">
+      <ObjectId>4</ObjectId>
+    </database>
+    <database id="6" parent="1" name="ReportServer$SQLEXPRESS">
+      <ObjectId>5</ObjectId>
+    </database>
+    <database id="7" parent="1" name="ReportServer$SQLEXPRESSTempDB">
+      <ObjectId>6</ObjectId>
+    </database>
+    <database id="8" parent="1" name="Test">
+      <ObjectId>7</ObjectId>
+    </database>
+    <database id="9" parent="1" name="lab1">
+      <ObjectId>8</ObjectId>
+    </database>
+    <database id="10" parent="1" name="ProjektSzkola">
+      <ObjectId>9</ObjectId>
+    </database>
+    <database id="11" parent="1" name="Library">
+      <ObjectId>10</ObjectId>
+    </database>
+    <database id="12" parent="1" name="RFID">
+      <ObjectId>11</ObjectId>
+    </database>
+    <database id="13" parent="1" name="NanoRFID">
+      <ObjectId>12</ObjectId>
+      <Visible>1</Visible>
+    </database>
+    <schema id="14" parent="13" name="dbo">
+      <ObjectId>1</ObjectId>
+      <IntrospectionTimestamp>2018-06-20.17:49:54.100</IntrospectionTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="15" parent="13" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="16" parent="13" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="17" parent="13" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <schema id="18" parent="13" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="19" parent="13" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="20" parent="13" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="21" parent="13" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="22" parent="13" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="23" parent="13" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="24" parent="13" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="25" parent="13" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="26" parent="13" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <table id="27" parent="14" name="Person">
+      <ObjectId>853578079</ObjectId>
+      <CreatedTimestamp>2018-06-20.13:39:39.010</CreatedTimestamp>
+      <ModifiedTimestamp>2018-06-20.13:39:54.887</ModifiedTimestamp>
+    </table>
+    <table id="28" parent="14" name="RfidOutput">
+      <ObjectId>901578250</ObjectId>
+      <CreatedTimestamp>2018-06-20.13:39:54.887</CreatedTimestamp>
+      <ModifiedTimestamp>2018-06-20.13:39:54.887</ModifiedTimestamp>
+    </table>
+    <table id="29" parent="14" name="sysdiagrams">
+      <ObjectId>693577509</ObjectId>
+      <CreatedTimestamp>2018-06-19.13:47:00.333</CreatedTimestamp>
+      <ModifiedTimestamp>2018-06-19.13:47:00.333</ModifiedTimestamp>
+    </table>
+    <routine id="30" parent="14" name="fn_diagramobjects">
+      <ObjectId>837578022</ObjectId>
+      <CreatedTimestamp>2018-06-19.13:47:00.493</CreatedTimestamp>
+      <ModifiedTimestamp>2018-06-19.13:47:00.493</ModifiedTimestamp>
+      <RoutineKind>function</RoutineKind>
+      <RoutineType>scalar-fun</RoutineType>
+    </routine>
+    <routine id="31" parent="14" name="sp_alterdiagram">
+      <ObjectId>805577908</ObjectId>
+      <CreatedTimestamp>2018-06-19.13:47:00.477</CreatedTimestamp>
+      <ModifiedTimestamp>2018-06-19.13:47:00.477</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="32" parent="14" name="sp_creatediagram">
+      <ObjectId>773577794</ObjectId>
+      <CreatedTimestamp>2018-06-19.13:47:00.420</CreatedTimestamp>
+      <ModifiedTimestamp>2018-06-19.13:47:00.420</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="33" parent="14" name="sp_dropdiagram">
+      <ObjectId>821577965</ObjectId>
+      <CreatedTimestamp>2018-06-19.13:47:00.487</CreatedTimestamp>
+      <ModifiedTimestamp>2018-06-19.13:47:00.487</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="34" parent="14" name="sp_helpdiagramdefinition">
+      <ObjectId>757577737</ObjectId>
+      <CreatedTimestamp>2018-06-19.13:47:00.390</CreatedTimestamp>
+      <ModifiedTimestamp>2018-06-19.13:47:00.390</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="35" parent="14" name="sp_helpdiagrams">
+      <ObjectId>741577680</ObjectId>
+      <CreatedTimestamp>2018-06-19.13:47:00.343</CreatedTimestamp>
+      <ModifiedTimestamp>2018-06-19.13:47:00.343</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="36" parent="14" name="sp_renamediagram">
+      <ObjectId>789577851</ObjectId>
+      <CreatedTimestamp>2018-06-19.13:47:00.460</CreatedTimestamp>
+      <ModifiedTimestamp>2018-06-19.13:47:00.460</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="37" parent="14" name="sp_upgraddiagrams">
+      <ObjectId>677577452</ObjectId>
+      <CreatedTimestamp>2018-06-19.13:47:00.307</CreatedTimestamp>
+      <ModifiedTimestamp>2018-06-19.13:47:00.307</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <column id="38" parent="27" name="id_person">
+      <Position>1</Position>
+      <DataType>int|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="39" parent="27" name="name">
+      <Position>2</Position>
+      <DataType>varchar(35)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="27" name="surname">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="27" name="date_of_birth">
+      <Position>4</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="27" name="sex">
+      <Position>5</Position>
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="43" parent="27" name="PESEL">
+      <Position>6</Position>
+      <DataType>varchar(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="27" name="blood_type">
+      <Position>7</Position>
+      <DataType>varchar(15)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="27" name="description">
+      <Position>8</Position>
+      <DataType>varchar(500)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="46" parent="27" name="PK__Person__E9AB6A41A0C90C7F">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_person</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="47" parent="27" name="PK__Person__E9AB6A41A0C90C7F">
+      <ObjectId>869578136</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-06-20.13:39:39.010</CreatedTimestamp>
+      <ModifiedTimestamp>2018-06-20.13:39:39.010</ModifiedTimestamp>
+      <ColNames>id_person</ColNames>
+      <UnderlyingIndexName>PK__Person__E9AB6A41A0C90C7F</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <check id="48" parent="27" name="peselLength">
+      <ObjectId>885578193</ObjectId>
+      <CreatedTimestamp>2018-06-20.13:39:39.010</CreatedTimestamp>
+      <ModifiedTimestamp>2018-06-20.13:39:39.010</ModifiedTimestamp>
+      <ColNames>PESEL</ColNames>
+      <Predicate>len([PESEL])=11</Predicate>
+    </check>
+    <column id="49" parent="28" name="id_read">
+      <Position>1</Position>
+      <DataType>int|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="50" parent="28" name="tag">
+      <Position>2</Position>
+      <DataType>varchar(40)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="51" parent="28" name="date">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="52" parent="28" name="id_person">
+      <Position>4</Position>
+      <DataType>int|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="53" parent="28" name="PK__RfidOutp__0F48581FB3F3568B">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_read</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="54" parent="28" name="PK__RfidOutp__0F48581FB3F3568B">
+      <ObjectId>917578307</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-06-20.13:39:54.887</CreatedTimestamp>
+      <ModifiedTimestamp>2018-06-20.13:39:54.887</ModifiedTimestamp>
+      <ColNames>id_read</ColNames>
+      <UnderlyingIndexName>PK__RfidOutp__0F48581FB3F3568B</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="55" parent="28" name="FK__RfidOutpu__id_pe__37A5467C">
+      <ObjectId>933578364</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-06-20.13:39:54.887</CreatedTimestamp>
+      <ModifiedTimestamp>2018-06-20.13:39:54.887</ModifiedTimestamp>
+      <ColNames>id_person</ColNames>
+      <RefTableId>853578079</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Person</RefTableName>
+      <RefKeyName>PK__Person__E9AB6A41A0C90C7F</RefKeyName>
+      <RefColNames>id_person</RefColNames>
+    </foreign-key>
+    <column id="56" parent="29" name="name">
+      <Position>1</Position>
+      <DataType>sysname|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="57" parent="29" name="principal_id">
+      <Position>2</Position>
+      <DataType>int|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="29" name="diagram_id">
+      <Position>3</Position>
+      <DataType>int|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="59" parent="29" name="version">
+      <Position>4</Position>
+      <DataType>int|0</DataType>
+    </column>
+    <column id="60" parent="29" name="definition">
+      <Position>5</Position>
+      <DataType>varbinary(max)|0</DataType>
+    </column>
+    <index id="61" parent="29" name="PK__sysdiagr__C2B05B6156F0B3A0">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>diagram_id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="62" parent="29" name="UK_principal_name">
+      <Position>2</Position>
+      <ColNames>principal_id
+name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="63" parent="29" name="PK__sysdiagr__C2B05B6156F0B3A0">
+      <ObjectId>709577566</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-06-19.13:47:00.337</CreatedTimestamp>
+      <ModifiedTimestamp>2018-06-19.13:47:00.337</ModifiedTimestamp>
+      <ColNames>diagram_id</ColNames>
+      <UnderlyingIndexName>PK__sysdiagr__C2B05B6156F0B3A0</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="64" parent="29" name="UK_principal_name">
+      <ObjectId>725577623</ObjectId>
+      <CreatedTimestamp>2018-06-19.13:47:00.337</CreatedTimestamp>
+      <ModifiedTimestamp>2018-06-19.13:47:00.337</ModifiedTimestamp>
+      <ColNames>principal_id
+name</ColNames>
+      <UnderlyingIndexName>UK_principal_name</UnderlyingIndexName>
+    </key>
+    <argument id="65" parent="30">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>int|0</DataType>
+    </argument>
+    <argument id="66" parent="31" name="@diagramname">
+      <DataType>sysname|0</DataType>
+    </argument>
+    <argument id="67" parent="31" name="@owner_id">
+      <DataType>int|0</DataType>
+    </argument>
+    <argument id="68" parent="31" name="@version">
+      <DataType>int|0</DataType>
+    </argument>
+    <argument id="69" parent="31" name="@definition">
+      <DataType>varbinary(max)|0</DataType>
+    </argument>
+    <argument id="70" parent="32" name="@diagramname">
+      <DataType>sysname|0</DataType>
+    </argument>
+    <argument id="71" parent="32" name="@owner_id">
+      <DataType>int|0</DataType>
+    </argument>
+    <argument id="72" parent="32" name="@version">
+      <DataType>int|0</DataType>
+    </argument>
+    <argument id="73" parent="32" name="@definition">
+      <DataType>varbinary(max)|0</DataType>
+    </argument>
+    <argument id="74" parent="33" name="@diagramname">
+      <DataType>sysname|0</DataType>
+    </argument>
+    <argument id="75" parent="33" name="@owner_id">
+      <DataType>int|0</DataType>
+    </argument>
+    <argument id="76" parent="34" name="@diagramname">
+      <DataType>sysname|0</DataType>
+    </argument>
+    <argument id="77" parent="34" name="@owner_id">
+      <DataType>int|0</DataType>
+    </argument>
+    <argument id="78" parent="35" name="@diagramname">
+      <DataType>sysname|0</DataType>
+    </argument>
+    <argument id="79" parent="35" name="@owner_id">
+      <DataType>int|0</DataType>
+    </argument>
+    <argument id="80" parent="36" name="@diagramname">
+      <DataType>sysname|0</DataType>
+    </argument>
+    <argument id="81" parent="36" name="@owner_id">
+      <DataType>int|0</DataType>
+    </argument>
+    <argument id="82" parent="36" name="@new_diagramname">
+      <DataType>sysname|0</DataType>
+    </argument>
+  </database-model>
+</dataSource>

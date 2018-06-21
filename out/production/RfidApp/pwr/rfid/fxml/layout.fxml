@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="433.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pwr.rfid.controller.Controller">
+   <children>
+      <Button fx:id="btnSave" disable="true" layoutX="319.0" layoutY="390.0" mnemonicParsing="false" onAction="#onClick" prefHeight="32.0" prefWidth="67.0" text="Save" />
+      <TextField fx:id="nameTF" editable="false" layoutX="123.0" layoutY="20.0" prefHeight="25.0" prefWidth="206.0" promptText="Name" />
+      <TextField fx:id="surnameTF" editable="false" layoutX="123.0" layoutY="55.0" prefHeight="25.0" prefWidth="206.0" promptText="Surname" />
+      <TextField fx:id="dateTF" editable="false" layoutX="123.0" layoutY="91.0" prefHeight="25.0" prefWidth="206.0" promptText="Date of birth (DD-MM-YYYY)" />
+      <TextField fx:id="sexTF" editable="false" layoutX="123.0" layoutY="127.0" prefHeight="25.0" prefWidth="206.0" promptText="Sex" />
+      <TextField fx:id="peselTF" editable="false" layoutX="123.0" layoutY="163.0" prefHeight="25.0" prefWidth="206.0" promptText="PESEL (11 characters)" />
+      <TextField fx:id="bloodTF" editable="false" layoutX="123.0" layoutY="200.0" prefHeight="25.0" prefWidth="206.0" promptText="Blood type" />
+      <TextArea fx:id="descriptionTA" editable="false" layoutX="12.0" layoutY="243.0" prefHeight="139.0" prefWidth="376.0" promptText="Description" wrapText="true" />
+      <Label fx:id="tagLabel" layoutX="59.0" layoutY="389.0" prefHeight="34.0" prefWidth="157.0" text="none">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="391.0" text="Tag:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="fillFormLabel" alignment="TOP_LEFT" disable="true" layoutX="8.0" layoutY="20.0" prefHeight="71.0" prefWidth="103.0" text="Please fill all the patient informations:" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="245.0" layoutY="390.0" mnemonicParsing="false" onAction="#onClickListen" prefHeight="32.0" prefWidth="67.0" text="Listen" />
+   </children>
+</AnchorPane>
